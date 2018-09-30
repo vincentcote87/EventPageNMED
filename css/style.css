@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800|Satisfy');
+
+body {
+    background: black;
+    background-image: url('../imgs/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.date {
+    position: fixed;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    top: 0px;
+    right: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #e5f3ff;
+}
+
+/* typeography */
+
+h1 {
+    color: #e5f3ff;
+    text-align: center;
+    font-family: 'satisfy', cursive;
+    font-size: 60px;
+    margin: 0;
+}
+
+/* animation */
+/* Followed video tutorial for Jasper animation: https://www.youtube.com/watch?v=y0Ic8QcvyK8 */
+path {
+    stroke: #e5f3ff;
+    fill: #e5f3ff;
+    stroke-dasharray: 1150;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1150;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1150;
+    }
+
+    90% {
+        fill: rgba(229, 243, 255, 0);
+
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(229, 243, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+.title {
+    opacity: 10;
+    animation: animateTitle 6s;
+}
+@keyframes animateTitle {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;;
+    }
+
+    100% {
+        opacity: 10;
+    }
+}
