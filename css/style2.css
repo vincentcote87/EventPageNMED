@@ -2,13 +2,13 @@
   'https://fonts.googleapis.com/css?family=Amatic+SC|Armata|PT+Serif:400i');
 
   * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
     margin: 0;
-    background: #484575;
+    background: #2e2c49;
 }
 
 a {
@@ -27,6 +27,13 @@ a:hover {
     background-size: cover;
 }
 
+.infoAndDate {
+    /* width: 60%; */
+    /* margin: 0 auto; */
+    padding: 50px;
+    background: #252931;
+}
+
 .logo {
     position: absolute;
     top: 45%;
@@ -36,69 +43,61 @@ a:hover {
 
 .speakers {
     border-radius: 50%;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
 }
-
-/* .wrapper {
-    max-width: 90vw;
-    margin: 0 auto;
-} */
 
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
     justify-content: center;
 }
 
-.item1 {
-    grid-column: 5/span 4;
+.infoGrid {
+    background-image: url(../imgs/back3.jpg);
+    background-color: #222222;
+    background-blend-mode: screen;
+    background-size: cover;
+    padding: 50px 0;
+
 }
 
-.item2 {
-    grid-column: 1 / -1;
+.infoTitle {
+    grid-column: 3 /span 3;
 }
 
-.item3 {
+.infoText {
+    grid-column: 4 /span 6;
+}
+
+.speakersGrid {
+    margin: 50px 0;
+}
+
+.speakersTitle {
+    grid-column: 3 /span 2;
+}
+
+.speakerImgLeft {
     grid-column: 3 /span 2;
     margin: 0 auto;
 }
 
-.item4 {
+.speakerTextLeft {
     grid-column: 5 /span 5;
-    padding: 70px 50px 0 0;
+    padding: 10px 0 0 0;
+    float: left;
 }
 
-.item5 {
+.speakerTextRight {
     grid-column: 4 /span 5;
-    padding: 70px 0 0 50px;
+    padding: 10px 0 0 0;
     text-align: right;
     float: right;
 }
 
-.item6 {
-    grid-column: 9 /span 2;
-    margin: 0 auto;
-}
-
-.item7 {
-    grid-column: 3 /span 2;
-    margin: 0 auto;
-}
-
-.item8 {
-    grid-column: 5 /span 5;
-    padding: 70px 50px 0 0;
-}
-
-.item9 {
-    grid-column: 4 /span 5;
-    padding: 70px 0 0 50px;
-    text-align: right;
-    float: right;
-}
-
-.item10 {
+.speakerImgRight {
     grid-column: 9 /span 2;
     margin: 0 auto;
 }
@@ -154,17 +153,34 @@ p {
     font-size: 45px;
     text-align: center;
     color: #878496;
+    margin: 0;
+    padding: 0;
 }
 
-.item1 p {
+.headingTitle {
+    border-bottom: solid 3px #e5f3ff;
+    text-align: left;
+}
+
+.item1 p, {
     text-align: center;
+}
+
+.infoAndDate p {
+    width: 60%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+figure {
+    margin: 0;
 }
 
 figcaption {
     color: #e5f3ff;
     text-align: center;
     font-family: 'Amatic SC', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* animation */
