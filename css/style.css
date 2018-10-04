@@ -1,79 +1,201 @@
 @import url(
-  'https://fonts.googleapis.com/css?family=Open+Sans:400,800|Satisfy|Kodchasan:400,500|Amatic+SC|Economica|Oswald:200,300,400|Armata');
+  'https://fonts.googleapis.com/css?family=Amatic+SC|Armata|PT+Serif:400i');
 
-body {
-    background: #484557;
+  * {
+    box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+    margin: 0;
+    background: #2e2c49;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.landingPage {
+    height: 100vh;
     background-image: url('../imgs/back1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 
-.wrapper {
+.infoAndDate {
+    padding: 50px;
+    background: #252931;
+}
+
+.logo {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.date {
-    position: fixed;
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    top: 0px;
-    right: 50px;
-    text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    color: #e5f3ff;
-}
-
-article {
-    position: absolute;
-    top: 100vh;
-    margin-top: 200px;
-}
-
-img {
+.speakers {
     border-radius: 50%;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+.infoGrid {
+    background-image: url(../imgs/back3.jpg);
+    background-color: #222222;
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 50px 0;
+
+}
+
+.infoTitle {
+    grid-column: 3 /span 3;
+}
+
+.infoText {
+    grid-column: 4 /span 6;
+}
+
+.speakersGrid {
+    margin: 50px 0;
+}
+
+.speakersTitle {
+    grid-column: 3 /span 2;
+}
+
+.speakerImgLeft {
+    grid-column: 3 /span 2;
+    margin: 0 auto;
+}
+
+.speakerTextLeft {
+    grid-column: 5 /span 5;
+    padding: 10px 0 0 0;
     float: left;
 }
 
-/* typeography */
+.speakerTextRight {
+    grid-column: 4 /span 5;
+    padding: 10px 0 0 0;
+    text-align: right;
+    float: right;
+}
 
+.speakerImgRight {
+    grid-column: 9 /span 2;
+    margin: 0 auto;
+}
+
+.faqGrid {
+    background-color: #252931;
+    padding: 50px 0;
+}
+
+.faqTitle {
+    grid-column: 3 /span 4;
+}
+
+.faq {
+    grid-column: 4 /span 6;
+}
+
+footer {
+    height: 150px;
+    background: black;
+}
+
+.socialMedia {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.smIcons {
+    width: 40px;
+    margin: 50px 20px 0 20px;
+}
+
+/* typography */
 h1 {
     color: #e5f3ff;
     text-align: center;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', sans-serif;
     font-size: 60px;
     margin: 0;
     text-transform: uppercase;
 }
 
 h2 {
-  font-size: 50px;
-  font-family: 'Amatic SC', cursive;
-  /* text-transform: uppercase; */
-  font-weight: 500;
-  color: #e5f3ff;
-  margin: 0 0 0 50px;
+    font-family: 'Armata', sans-serif;
+    font-size: 22px;
+    color: #e5f3ff;
 }
 
 h3 {
-  font-size: 22px;
-  font-family: 'Armata', sans-serif;
-  /* font-weight: 300; */
-  color: #e5f3ff;
-  margin: 0 0 0 50px;
+    font-family: 'Armata', sans-serif;
+    font-size: 22px;
+    color: #e5f3ff;
+    border-bottom: #e5f3ff 2px solid;
 }
 
 p {
-  font-size: 18px;
-  font-family: 'Armata', sans-serif;
-  /* font-weight: 200; */
-  color: #e5f3ff;
+    font-family: 'Armata', sans-serif;
+    font-size: 18px;
+    color: #e5f3ff;
+}
+
+.moto {
+    font-family: 'PT Serif', Serif;
+    font-style: italic; 
+    font-size: 45px;
+    text-align: center;
+    color: #878496;
+    margin: 0;
+    padding: 0;
+}
+
+.headingTitle {
+    border-bottom: solid 3px #e5f3ff;
+    text-align: left;
+}
+
+.item1 p, {
+    text-align: center;
+}
+
+.infoAndDate p {
+    width: 60%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    color: #e5f3ff;
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+}
+
+.link {
+    color: #898a92;
+    border-bottom: 1px solid #898a92;
 }
 
 /* animation */
