@@ -1,14 +1,14 @@
 @import url(
   'https://fonts.googleapis.com/css?family=Amatic+SC|Armata|PT+Serif:400i');
 
-  * {
+* {
     box-sizing: border-box;
 }
 
 html, body {
 	height: 100%;
     margin: 0;
-    background: #2e2c49;
+    background: #5f5d70;
 }
 
 a {
@@ -44,6 +44,7 @@ a:hover {
     width: 100%;
 }
 
+/* CSS Grids */
 .grid-parent {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -53,10 +54,10 @@ a:hover {
 
 .infoGrid {
     background-image: url(../imgs/back3.jpg);
-    background-color: #222222;
-    background-blend-mode: screen;
+    background-color: #1e1925;
+    background-blend-mode: luminosity;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     padding: 50px 0;
 
 }
@@ -113,19 +114,41 @@ a:hover {
     grid-column: 4 /span 6;
 }
 
+.sm1 {
+    grid-column: 5 /span 1;
+}
+
+.sm2 {
+    grid-column: 6 /span 1;
+}
+
+.sm3 {
+    grid-column: 7 /span 1;
+}
+
+.sm4 {
+    grid-column: 8 /span 1;
+}
+
+.sm {
+    margin: 50px auto;
+}
+
+/* End of CSS Grids */
+
 footer {
     height: 150px;
     background: black;
 }
 
-.socialMedia {
+/* .socialMedia {
     margin: 0 auto;
-    width: 20%;
-}
+    width: 30%;
+} */
 
 .smIcons {
     width: 40px;
-    margin: 50px 20px 0 20px;
+    /* margin: 50px 20px 0 20px; */
 }
 
 /* typography */
